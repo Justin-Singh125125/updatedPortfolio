@@ -8,7 +8,7 @@ html,body{
     width: 100%;
     height: 100%;
     font-family: 'Nunito Sans', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 .bg-image{
      
@@ -22,61 +22,81 @@ html,body{
 
 #particles-js{
 
-  position: absolute;
-  top:0;
-  left:0;
   z-index: 1;
   width: 100%;
   height: 100%;
   display: inline-block;
   vertical-align: baseline;
 }
-
-.about-me{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: red;
-    z-index: 2;
+.navbar-changeColor{
+    transform: translate3d(0,100%,0);
+    background-color: black;
 }
 
+.about-me{
+ 
+    padding-top:120px;
+    padding-bottom: 120px;
+    background: #fff;
 
-li{
+}
+.navbar{
+   
+    background: transparent;
+    transition: .6s;
+
+}
+button.navbar-toggler{
+   border: none;
+}
+
+.fa-ellipsis-h{
+    color: white;
+}
+.navbar-brand, .nav-link{
+    color: white;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.nav-link{
+    font-size: 25px;
+    margin-right: 40px;
+    height: auto;
     text-align: center;
     
 }
-.navbar{
- position: relative;
-  
-}
-.navbar-brand, a.nav-link{
-    color: #fff;
-    font-size:20px;
-    margin-right: 40px;
-}
-a.nav-link:hover{
-    border-bottom: 1px solid #fff;
-    color: #e8e3e0;
-}
-a.navbar-brand:hover {
-    color: #e8e3e0;
-}
-.navbar-brand{
-    font-size: 40px;
-    margin-left: 60px;
-}
-
-.icon-bar{
-    color: white;
+.nav-link::after{
+    content: ' ';
     display: block;
-}
-button{
-    display: visible;
-}
-
-.navbar .navbar-toggle .icon-bar{
-    background: #fff;
+    width: 0;
     height: 2px;
-    width: 22px;
-
+    background: #fff;
+    transition: width .3s;
 }
+.navbar-brand:hover{
+    color: #e3e1df;
+}
+.nav-link:hover{
+    color: #e3e1df;
+}
+
+.nav-link:hover::after{
+    color: #e3e1df;
+    width: 100%;
+   
+}
+#about-header::after{
+    content: ' ';
+    display: block;
+
+    height: 2px;
+    background: black;
+    transition: width .3s;
+    width: 10%;
+}
+
+
+
