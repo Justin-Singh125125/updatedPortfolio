@@ -113,13 +113,17 @@ button.navbar-toggler{
 
 .car-1 {
     width: 100%;
-    height: 35vh;
+    height: 50vh;
     background: #1f1e1e;
     color: white;
     text-align: center;
 }
 #quote-header{
     padding-top: 20px;
+}
+.quote-of-the-day{
+    width: 100%;
+    height: 50vh;
 }
 .quote{
     padding-top: 50px;
@@ -206,3 +210,11 @@ label{
 .form-group{
     padding-top: 20px
 }
+#portfolio-page{
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+
+
