@@ -131,5 +131,17 @@ button.navbar-toggler{
 }
 
 
+/* flip animations */
 
+
+#portfolio-page{
+    clear:both;
+    display:block;
+    width: 100%;
+    height: 100%;
+    background: #ffeda5;
+}
+.card{
+    margin: 0 auto;
+}
 
