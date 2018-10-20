@@ -132,16 +132,62 @@ button.navbar-toggler{
 
 
 /* flip animations */
+.flip3D{ 
+    padding-top: 20px;
+    width:350px; 
+    height:300px;
+    margin: 0 auto;
+}
+.flip3D > .front{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+    background:#FC0; 
+    width:350px; 
+    height:300px; 
+    border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+    background: #80BFFF;
+    width:350px; 
+    height:300px;
+       border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+
+.flip3D:hover > .back{
+  
+	transform: perspective( 600px ) rotateY( 0deg );
+}
 
 
 #portfolio-page{
+    text-align: center;
     clear:both;
     display:block;
     width: 100%;
     height: 100%;
     background: #ffeda5;
 }
-.card{
-    margin: 0 auto;
+.col-md-6{
+    margin-top: 20px;
+    padding: 0;
+}
+#portfolio-header{
+    padding-top: 20px;
+    border-bottom: 2px solid black;
+}
+#bored-af{
+    width:350px; 
+    height:300px;
 }
 
