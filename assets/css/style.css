@@ -144,18 +144,18 @@ button.navbar-toggler{
     background:#FC0; 
     width:350px; 
     height:300px; 
-    border-radius: 7px;
+    border-radius: 10px;
 	backface-visibility: hidden;
 	transition: transform .5s linear 0s;
 }
 .flip3D > .back{
-
+    
 	position:absolute;
 	transform: perspective( 600px ) rotateY( 180deg );
-    background: #80BFFF;
+    background: #878685;
     width:350px; 
     height:300px;
-       border-radius: 7px;
+       border-radius: 10px;
 	backface-visibility: hidden;
 	transition: transform .5s linear 0s;
 }
@@ -186,8 +186,19 @@ button.navbar-toggler{
     padding-top: 20px;
     border-bottom: 2px solid black;
 }
-#bored-af{
+#image-size{
+    border-radius: 10px;
     width:350px; 
     height:300px;
+}
+#live-link,#github-link {
+    transition: .3s;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+#live-link:hover , #github-link:hover{
+    color: red;
+
 }
 
