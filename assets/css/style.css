@@ -199,6 +199,10 @@ button.navbar-toggler{
 }
 #live-link:hover , #github-link:hover{
     color: red;
-
 }
-
+label{
+    font-size: 20px;
+}
+.form-group{
+    padding-top: 20px
+}
