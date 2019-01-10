@@ -122,9 +122,7 @@ button.navbar-toggler{
     color: white;
     text-align: center;
 }
-#quote-header{
-    padding-top: 20px;
-}
+
 .quote-of-the-day{
     width: 100%;
     height: 50vh;
@@ -137,7 +135,9 @@ button.navbar-toggler{
     font-size: 18px;
     font-family: cursive;
 }
-
+.carousel-item{
+    margin-top: 20px;
+}
 
 /* flip animations */
 
